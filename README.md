@@ -88,13 +88,17 @@ Hash changes
 Rule IDs (550, 553, 554)
 
 📊 Sample FIM Alert
+
 syscheck.path: c:\users\administrator\sensitivefiles\secret_plan.txt
+
 syscheck.event: modified
 
 Old sha256sum: 8443edbbb7c000c36818966e198b8435b5dc81c12a58050d671ea8fa0c85669
+
 New sha256sum: ff176899dc770c5705c1a8a48c21c8e0be1d6e3576f43070985e0c727a86d3b
 
 rule.description: Integrity checksum changed
+
 rule.id: 550
 
 🚧 Challenges & Resolutions
