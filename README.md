@@ -45,13 +45,19 @@ curl -sO https://packages.wazuh.com/4.12/wazuh-install.sh
 
 sudo bash ./wazuh-install.sh -a -i
 
+![Wazuh Install](screenshots/wazuh_install.PNG)
+
 2. Install & Register Windows Agent
 
 Installed MSI
 
+![Agent Install](screenshots/agent_install.PNG)
+
 Generated agent key via:
 
 sudo /var/ossec/bin/manage_agents
+
+![Agent Key](screenshots/agent_key.PNG)
 
 Added Manager IP + Key in Wazuh Agent GUI
 
@@ -65,9 +71,14 @@ Added:
 
 <directories realtime="yes">C:\Users\Administrator\SensitiveFiles</directories>
 
+
+![OSSEC Config](screenshots/ossec.PNG)
+
 Restarted the agent.
 
 4. Generate File Activities
+
+![Sensitive Folder](screenshots/folder.PNG)
 
 Created file
 
@@ -87,6 +98,8 @@ Hash changes
 
 Rule IDs (550, 553, 554)
 
+![Dashboard](screenshots/dashboard.PNG)
+
 📊 Sample FIM Alert
 
 syscheck.path: c:\users\administrator\sensitivefiles\secret_plan.txt
@@ -100,6 +113,8 @@ New sha256sum: ff176899dc770c5705c1a8a48c21c8e0be1d6e3576f43070985e0c727a86d3b
 rule.description: Integrity checksum changed
 
 rule.id: 550
+
+![FIM Alerts](screenshots/fim-alerts.PNG)
 
 🚧 Challenges & Resolutions
 
